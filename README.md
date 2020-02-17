@@ -13,7 +13,7 @@ Form 下每个崽组件的key 对应 data 的 属性
 > example
 
 1. react 
-
+```javascript
 import React, { Component } from 'react'
 import Form from './../com/from';
 import EInput from '../com/Einput';
@@ -43,8 +43,9 @@ export default class Home extends Component {
     )
   }
 }
+```
 
-
+```javascript
 export default class EInput extends Component {
 
   constructor(props) {
@@ -69,6 +70,7 @@ export default class EInput extends Component {
     )
   }
 }
+```
 
 2. 1. react-native
 
