@@ -74,7 +74,7 @@ export default class EInput extends Component {
 
 2. 1. react-native
 
-
+```javascript
 export default Tsts = () => {
 
   const [from, useFrom] = useState("")
@@ -105,9 +105,8 @@ export default Tsts = () => {
     </View>
   );
 }
-
-
-
+```
+```javascript
 export default class EInput extends Component {
 
   constructor(props) {
@@ -135,3 +134,4 @@ export default class EInput extends Component {
     )
   }
 }
+```
