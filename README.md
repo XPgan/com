@@ -135,3 +135,29 @@ export default class EInput extends Component {
   }
 }
 ```
+> hooks 用法
+
+```javascript
+import React, { Component, useState, forwardRef, useImperativeHandle } from 'react'
+
+const EInput = forwardRef((props, parentRef) => {
+  const [value, useValue] = useState(props.key && props[props.key].toString())
+
+  useImperativeHandle(parentRef, () => ({
+    state: { value }
+  }));
+
+  return (
+    <View style={styles.page}>
+      <Text style={styles.text}>{props.title}</Text>
+      <View style={styles.select}>
+        <TextInput
+          onChangeText={(e) => useValue(e)}
+          style={styles.input}
+          value={value}
+        />
+      </View>
+    </View>
+  )
+})
+```
